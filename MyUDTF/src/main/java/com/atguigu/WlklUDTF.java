@@ -31,7 +31,7 @@ public class WlklUDTF extends GenericUDTF {
         ArrayList<ObjectInspector> fieldOIs = new ArrayList<ObjectInspector>();
         fieldNames.add("items");
         fieldOIs.add(PrimitiveObjectInspectorFactory.javaStringObjectInspector);
-
+        System.out.println("xxx");
         return ObjectInspectorFactory.getStandardStructObjectInspector(fieldNames,
                 fieldOIs);
     }
